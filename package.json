@@ -1,0 +1,21 @@
+{
+  "name": "vue-async-comp",
+  "version": "1.0.0",
+  "description": "A wrapper function to replace vue async component factory. Mainly help to re-try loading when a chunck fails to load.",
+  "main": "./dist/index.js",
+  "typings": "./dist/index.d.ts",
+  "scripts": {
+    "build": "npx tsc -p .",
+    "watch": "npx tsc -p . -w"
+  },
+  "author": "Yves Wang",
+  "license": "ISC",
+  "devDependencies": {
+    "typescript": "^3.8.3",
+    "vue": "^2.6.11"
+  },
+  "peerDependencies": {
+    "vue": "^2.3.x",
+    "vue-router": "^2.4.x"
+  }
+}
