@@ -1,6 +1,6 @@
 {
   "name": "vue-async-comp",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "A wrapper function to replace vue async component factory. Mainly help to re-try loading when a chunck fails to load.",
   "main": "./dist/index.js",
   "typings": "./dist/index.d.ts",
