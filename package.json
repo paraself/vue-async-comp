@@ -9,6 +9,10 @@
     "watch": "npx tsc -p . -w"
   },
   "author": "Yves Wang",
+  "repository": {
+    "url": "https://github.com/paraself/vue-async-comp.git",
+    "type": "git"
+  },
   "license": "ISC",
   "devDependencies": {
     "typescript": "^3.8.3",
