@@ -26,7 +26,7 @@ const asyncComp = new AsyncComp({
 const routes: RouteConfig[] = [
   {
     path: '/',
-    component: asyncComp(import('../MyHome.vue'))
+    component: asyncComp.load(import('../MyHome.vue'))
   }
 ]
 
@@ -40,7 +40,7 @@ or along with `vue-class-component`
 ``` ts
 @Component({
   components: {
-    MyComp: asyncComp(import('../MyComp.vue'))
+    MyComp: asyncComp.load(import('../MyComp.vue'))
   }
 })
 export default class Test extends Vue {
