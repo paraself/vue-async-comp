@@ -2,8 +2,10 @@
 
 A wrapper class to replace vue async component factory. Mainly help to re-try loading when a chunck fails to load.
 
+The original vue [async component factory](https://vuejs.org/v2/guide/components-dynamic-async.html#Handling-Loading-State) does not offer a way to reload when chunck fail to load. The wrapper class can help reloading chunks.
 
-## usage
+Vue 异步组件加载器，主要用于当异步组件懒加载失败的时候，能够重新加载该chunk。Vue[默认的异步组件工厂函数](https://vuejs.org/v2/guide/components-dynamic-async.html#Handling-Loading-State)没有提供重试的方法，通过该插件可以方便的在chunk加载失败的时候，重新加载对应的chunk。
+## Usage
 Routing
 ``` ts
 import RouteLoading from './RouteLoading.vue'
@@ -39,7 +41,7 @@ export default class Test extends Vue {
 }
 ```
 
-## about chunk reloading
+## Chunk reloading
 In `Error.vue`, emit `reload` event.
 ``` vue
 <template>
