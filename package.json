@@ -20,6 +20,6 @@
   },
   "peerDependencies": {
     "vue": "^2.3.x",
-    "vue-router": "^2.3.x"
+    "vue-router": "^3.3.x"
   }
 }
