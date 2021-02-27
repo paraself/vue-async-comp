@@ -9,11 +9,11 @@ export declare class AsyncComp {
         loading: Component;
         /** A component to use if the load fails */
         error: Component;
-        /** Delay before showing the loading component. Default: 200ms. */
+        /** Delay in millieseconds before showing the loading component. Default: 200ms. */
         delay?: number;
         /**
-         * The error component will be displayed if a timeout is
-         * provided and exceeded. Default: 7s.
+         * The error component will be displayed if a timeout in millieseconds is
+         * provided and exceeded. Default: 7000ms.
          */
         timeout?: number;
     });
